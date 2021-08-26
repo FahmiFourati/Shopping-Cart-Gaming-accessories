@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/img/bg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-10%;
+    
+}
+
+
+/* Navbar Styles */
+
+.navbar-nav {
+    position: relative ; 
+    left: 250px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#logo , #logo-cart {
+    width: 60px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Main Styles */
+.container {
+    margin-top : 30px;
+}
+.header {
+    position: relative;
+    left: 680px;
+    bottom: 2px;
+    margin-left: 16px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.item {
+    width: 1000px;
+    margin : auto ; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 5px;   
+    font-weight: bold;
+    color: rgb(66, 65, 65);
+}
+
+.item-photo {
+    width : 60px ;
+    cursor: pointer;
+}
+
+.input-number {
+    width: 25px;
+    background : transparent;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.item-control {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    gap: 7px ; 
+    justify-content: space-around; 
+    position:relative;
+    right: 50px;
+}
+
+.item p {
+    width: 45%;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+i {
+  cursor: pointer;  
+}
+
+.fa-minus-square:hover,.fa-plus-square:hover {
+    background-color: rgb(219, 215, 215);
+}
+
+.fa-heart {
+    border: none;
+    text-decoration: none;
+}
+
+.fa-heart:hover {
+    color: gray;
+}
+
+.fa-trash-alt:hover {
+    color: red;
+}
+
+.fa-trash-alt {
+    margin-left: 29 px;
+}
+
+.qt-control {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+}
+
+.activated {
+    color: red;
+}
+
+#totalPrice {
+    position: relative;
+    bottom: 80px;
+    left: 950px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+}
+
+#product-quantity {
+    width: 23px;
+    border-radius: 100%  ;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    top: 49px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#empty-cart {
+    position: absolute;
+    right: 320px;
+    bottom: 300px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    display: none;
+}

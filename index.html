@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img id="logo" src="img/logo.png" alt="TN gaming lab logo">
+            <a class="navbar-brand" href="#">TN Gaming Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Limited editions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Gaming</a></li>
+                            <li><a class="dropdown-item" href="#">Streaming</a></li>
+                            <li><a class="dropdown-item" href="#">Video editing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <img id="logo-cart" src="img/logo-cart.png" alt="">
+        </div>
+    </nav>
+<!-- Shopping Cart Body -->
+<div class="container">
+    <span id="totalPrice">Total :</span>                
+    <div id="product-quantity">1</div>
+    <span id="headerQty" class="header">Quantitiy</span>
+    <span id="headerPrice" class="header">Price</span>
+    <div class="item">
+        <img class="item-photo" src="img/keyboard.png" alt="">
+        <p>Razer 2-Piece Gaming: Cynosa Pro Keyboard and Deathadder Mouse</p>
+        
+        <div class="item-control">
+            <span class="qt-control">
+                <i class="far fa-minus-square"></i>
+                <input class="input-number" type="text" value="1">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="item-price mx-3">325</span>
+            <i class="far fa-trash-alt"></i>
+            <i class="fas fa-heart"></i>          
+        </div>
+    </div>
+    <div class="item">
+        <img class="item-photo" src="img/casque.png" alt="">
+        <p>Razer RZ04-02890100-R3U1 Kraken X Ultralight Gaming Headset</p>
+        <div class="item-control">
+            <span class="qt-control">
+                <i class="far fa-minus-square"></i>
+                <input class="input-number" type="text" value="1">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="item-price mx-3">175</span>
+            <i class="far fa-trash-alt"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+    <div class="item">
+        <img class="item-photo" src="img/sac.png" alt="">
+        <p>Razer Rogue v2 13.3" Gaming Laptop Backpack: Tear and Water Resistant</p>
+        <div class="item-control">
+            <span class="qt-control">
+                <i class="far fa-minus-square"></i>
+                <input class="input-number" type="text" value="1">
+                <i class="far fa-plus-square"></i>
+            </span>
+            <span class="item-price mx-3">120</span>
+            <i class="far fa-trash-alt"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+</div>
+<span id="empty-cart">Sorry! Your shpping cart is empty!</span>
+<script src="js/script.js"></script>
+</body>
+</html>
